@@ -83,8 +83,8 @@ class response_serializer:
 
 class client_serializer:
     if __name__ == "__main__":
-        # Mocking call
         serializer = response_serializer()
+        # Mocking call
         response = api.get()
         return serializer.serializer(response, return_type)       
 ```
